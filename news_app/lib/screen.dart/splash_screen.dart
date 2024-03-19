@@ -26,11 +26,11 @@ class _SplashScreenState extends State<SplashScreen> {
               style: GoogleFonts.almarai(
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
-                color: const Color.fromARGB(199, 18, 82, 20),
+                color:Colors.red
               ),
             ),
             const SizedBox(
-              height: 80,
+              height: 100,
             ),
             Image.asset('asset/images/anime.gif'),
           ],
