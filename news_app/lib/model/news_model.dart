@@ -19,19 +19,18 @@ class NewsModel {
     this.content,
   });
 
-factory NewsModel.fromJson(Map<String, dynamic> json) {
-  return NewsModel(
-    source: Source.fromJson(json['source']),
-    author: json['author'] ?? "", 
-    title: json['title'] ?? "", 
-    description: json['description'] ?? "", 
-    url: json['url'] ?? "", 
-    urlToImage: json['urlToImage'] ?? "", 
-    publishedAt: DateTime.parse(json['publishedAt']),
-    content: json['content'] ?? "", 
-  );
-}
-
+  factory NewsModel.fromJson(Map<String, dynamic> json) {
+    return NewsModel(
+      source: Source.fromJson(json['source']),
+      author: json['author'] ?? "",
+      title: json['title'] ?? "",
+      description: json['description'] ?? "",
+      url: json['url'] ?? "",
+      urlToImage: json['urlToImage'] ?? "",
+      publishedAt: DateTime.parse(json['publishedAt']),
+      content: json['content'] ?? "",
+    );
+  }
 }
 
 class Source {

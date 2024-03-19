@@ -27,9 +27,11 @@ class _SplashScreenState extends State<SplashScreen> {
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
                 color: const Color.fromARGB(199, 18, 82, 20),
-              ), 
+              ),
             ),
-            const SizedBox(height: 80,),
+            const SizedBox(
+              height: 80,
+            ),
             Image.asset('asset/images/anime.gif'),
           ],
         ),

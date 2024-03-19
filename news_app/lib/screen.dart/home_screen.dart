@@ -119,11 +119,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ),
                                 ),
                                 onTap: () {
-                                    FlutterWebBrowser.openWebPage(
+                                  FlutterWebBrowser.openWebPage(
                                     url: newslist[index].url,
                                     customTabsOptions: const CustomTabsOptions(
                                       colorScheme: CustomTabsColorScheme.dark,
-                                      toolbarColor: Color.fromARGB(255, 12, 84, 15),
+                                      toolbarColor:
+                                          Color.fromARGB(255, 12, 84, 15),
                                       secondaryToolbarColor: Colors.amber,
                                       navigationBarColor: Colors.black,
                                       shareState: CustomTabsShareState.on,
