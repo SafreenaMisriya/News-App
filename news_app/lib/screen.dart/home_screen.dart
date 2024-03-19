@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     margin: EdgeInsets.only(left: width * 0.03),
                     child: const Text('BlOCK NEWS',
                         style: TextStyle(
-                            color: Color.fromARGB(255, 6, 108, 9),
+                            color: Color.fromARGB(255, 155, 10, 10),
                             fontSize: 25,
                             fontWeight: FontWeight.bold))),
                 SizedBox(
@@ -103,18 +103,47 @@ class _HomeScreenState extends State<HomeScreen> {
                                       SizedBox(
                                         width: width * 0.01,
                                       ),
-                                      Container(
-                                          height: height * 0.15,
-                                          width: width * 0.65,
-                                          padding: EdgeInsets.symmetric(
-                                              vertical: height * 0.01),
-                                          child: Text(
-                                            newslist[index].title,
-                                            overflow: TextOverflow.clip,
-                                            style: const TextStyle(
-                                                fontSize: 16,
-                                                fontWeight: FontWeight.bold),
-                                          ))
+                                      Column(
+                                        mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Container(
+                                              height: height * 0.10,
+                                              width: width * 0.55,
+                                              padding: EdgeInsets.symmetric(
+                                                  vertical: height * 0.01),
+                                              child: Text(
+                                                newslist[index].title,
+                                                overflow: TextOverflow.clip,
+                                                style: const TextStyle(
+                                                    fontSize: 16,
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              )),
+                                              SizedBox(height: height *0.02,),
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              SizedBox(
+                                                height: height *0.03,
+                                                width: width *0.15,
+                                                  child: Text(
+                                                newslist[index].author.toString(),
+                                                overflow: TextOverflow.clip,
+                                              )),
+                                              SizedBox(width: width *0.25,),
+                                               SizedBox(
+                                                height: height *0.03,
+                                                width: width *0.30,
+                                                  child: Text(
+                                               newslist[index].publishedAt.toString(),
+                                                overflow: TextOverflow.clip,
+                                                style: const TextStyle(color: Colors.black38),
+                                              )),
+                                            ],
+                                          )
+                                        ],
+                                      ),
                                     ],
                                   ),
                                 ),
