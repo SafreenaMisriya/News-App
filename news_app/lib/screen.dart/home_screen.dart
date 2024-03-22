@@ -97,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                             ),
                                             image: DecorationImage(
                                                 image: NetworkImage(
-                                                    newslist[index].urlToImage),
+                                                    newslist[index].urlToImage ),
                                                 fit: BoxFit.cover)),
                                       ),
                                       SizedBox(
@@ -113,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               padding: EdgeInsets.symmetric(
                                                   vertical: height * 0.01),
                                               child: Text(
-                                                newslist[index].title,
+                                                newslist[index].title ,
                                                 overflow: TextOverflow.clip,
                                                 style: const TextStyle(
                                                     fontSize: 16,

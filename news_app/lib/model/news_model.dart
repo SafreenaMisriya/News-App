@@ -23,10 +23,10 @@ class NewsModel {
     return NewsModel(
       source: Source.fromJson(json['source']),
       author: json['author'] ?? "",
-      title: json['title'] ?? "",
+      title: json['title'] ?? "What Ajit Agarkar-led BCCI selectors will be looking for in IPL 2024 for India's T20 World Cup selection",
       description: json['description'] ?? "",
-      url: json['url'] ?? "",
-      urlToImage: json['urlToImage'] ?? "",
+      url: json['url'] ?? "https://www.hindustantimes.com/ht-img/img/2024/03/21/550x309/GJNWARZWQAES2bf_1711048078975_1711048087122.jpg",
+      urlToImage: json['urlToImage'] ?? "https://www.hindustantimes.com/ht-img/img/2024/03/21/550x309/GJNWARZWQAES2bf_1711048078975_1711048087122.jpg",
       publishedAt: DateTime.parse(json['publishedAt']),
       content: json['content'] ?? "",
     );
